@@ -114,7 +114,7 @@ def print_table(table):
     for line in table:
         justified_line = []
         for i, el in enumerate(line):
-            justified_line.append(el.ljust(widths[i] + 2))
+            justified_line.append(el)
         justified_table.append(justified_line)
 
     for line in justified_table:
