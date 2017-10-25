@@ -65,7 +65,7 @@ rules = {"Name": get_name,
 def sort_cells(cells):
     sortby = "Quality"
     reverse = True
-    cells.sort(None, lambda el: el[sortby], reverse)
+    cells.sort(key=lambda el: el[sortby])
 
 
 # You can choose which columns to display here, and most importantly in what order. Of
