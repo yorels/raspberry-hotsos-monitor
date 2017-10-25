@@ -155,6 +155,6 @@ def iwlist():
     for cell in cells:
         parsed_cells.append(parse_cell(cell))
 
-    sort_cells(parsed_cells)
-
+    #sort_cells(parsed_cells)
+    print ("*_+_+_+_+* Wi-FI Quality : ")
     print_cells(parsed_cells)
