@@ -1,12 +1,15 @@
 from commons import Settings
 from commons.BusinessException import HotSOSError
 from restfulws.EndPoint import EndPointOperations
+from network import IWQAScanner
 
 
 class Monitors(object):
 
     headers = Settings.headers
     response = ()
+
+    IWQAScanner.iwlist()
 
     def run_monitors(self) -> str:
         self.status_monitor()

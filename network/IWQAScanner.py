@@ -134,7 +134,7 @@ def print_cells(cells):
     print_table(table)
 
 
-def main():
+def iwlist():
     """Pretty prints the output of iwlist scan into a table"""
 
     cells = [[]]
