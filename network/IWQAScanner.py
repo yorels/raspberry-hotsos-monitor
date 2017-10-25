@@ -108,13 +108,13 @@ def parse_cell(cell):
 
 
 def print_table(table):
-    widths = map(max, map(lambda l: map(len, l), zip(*table)))  # functional magic
+    widths = list(map(max, map(lambda l: map(len, l), zip(*table))))  # functional magic
 
     justified_table = []
     for line in table:
         justified_line = []
         for i, el in enumerate(line):
-            justified_line.append(el)
+            justified_line.append(el.ljust(widths[i] + 2))
         justified_table.append(justified_line)
 
     for line in justified_table:
