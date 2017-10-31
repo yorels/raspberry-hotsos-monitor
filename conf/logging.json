@@ -21,7 +21,7 @@
         "info_file_handler": {
             "class": "logging.handlers.RotatingFileHandler",
             "level": "INFO",
-            "formatter": "clean",
+            "formatter": "simple",
             "filename": "logs/hot_sos_monitor.log",
             "maxBytes": 10485760,
             "backupCount": 20,

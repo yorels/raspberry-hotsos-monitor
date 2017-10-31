@@ -5,4 +5,4 @@ class HotSOSError(Exception):
         self.traceback = traceback
 
     def __str__(self):
-        return repr(self.value) + " > " + repr(self.traceback)
+        return repr(self.value + ", " + self.traceback)

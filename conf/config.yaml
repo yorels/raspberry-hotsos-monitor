@@ -1,0 +1,25 @@
+---
+wlan: wlan0
+
+na3: &prod
+  url: na3.m-tech.com
+  login: lodging_ct
+  password: mickey
+  origin: https://na3.m-tech.com
+
+int: &test
+  url: int3.m-tech.com
+  login: auto1234
+  password: hotsos98
+  origin: https://int.m-tech.com
+
+hot_sos:
+  <<: *prod
+
+default:
+  cookie: ASP.NET_SessionId=mm2wobd0bviwdwhqnzjtr52r
+  token: raspberrySRE91bFHtBLqZVV6OVzsR
+
+device:
+  name: RasBerry+SRE+built+for+x86
+  id: 11d1sn3y6f3c60f777
