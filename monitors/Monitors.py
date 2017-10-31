@@ -1,7 +1,7 @@
 import logging
 from commons import Settings
 from multiprocessing import util
-from network import IWQAScanner
+from network.IWQAScanner import IwQaScanner
 from restfulws.EndPoint import EndPointOperations
 
 
@@ -25,7 +25,7 @@ class Monitors(object):
 
         if kwargs.get("wifi"):
             logger.debug("WiFi signal monitor: ON, interface:" + Settings.w_interface )
-            IWQAScanner.iwlist()
+            IwQaScanner().scan()
 
         self.login_monitor()
         self.headers['cookie'] = Settings.cookie + "; " + Settings.auth
